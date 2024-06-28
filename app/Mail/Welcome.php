@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -17,9 +18,9 @@ class Welcome extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
-    {
-        //
+    public function __construct(
+       public User $user
+    ) {
     }
 
     /**
@@ -29,7 +30,7 @@ class Welcome extends Mailable
     {
         return new Envelope(
             from: new Address('admin@nccfimo.org.ng', 'NCCIMO Admin'),
-            subject: 'Welcome Message',
+            subject: 'Welcome to NCCF Imo State',
         );
     }
 

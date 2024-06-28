@@ -1,13 +1,16 @@
 <x-mail::message>
-# Welcome Message
+# Dear {{ $user->name }},
 
-NCCFIMO welcomes you to the body of chirst, we hope you are doing fine.
-God bless you.
+Welcome to the Nigeria Christian Corpers' Fellowship (NCCF) Imo State Chapter! We're thrilled to have you join our community.
+
+Stay connected, get involved, and feel free to reach out if you have any questions or need support. Together, we'll grow in faith and service.
+
+Blessings,
 
 <x-mail::button :url="'https://nccfimo.org.ng/'">
 Back To Site
 </x-mail::button>
 
 Thanks,<br>
-{{ config('app.name') }}
+NCCF Imo State
 </x-mail::message>
