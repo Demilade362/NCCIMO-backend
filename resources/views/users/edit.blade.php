@@ -9,7 +9,7 @@
                         Dashboard</a>
                     <a href="{{ route('user.index') }}" class="nav-link my-2 py-2 active"><i class="fas fa-users"></i>
                         Users</a>
-                    <a href="#" class="nav-link my-2 py-2"><i class="fas fa-chart-line"></i> Analytics</a>
+                    <a href="{{ route('user.analytics') }}" class="nav-link my-2 py-2"><i class="fas fa-chart-line"></i> Analytics</a>
                 </div>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                     @csrf

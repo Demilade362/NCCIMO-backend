@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -90,5 +91,24 @@ class UserController extends Controller
         $users = User::where('name', 'like', "%$name%")->get();
     
         return view('users.index', compact('users'));
+    }
+
+    public function showAnalytics()
+    {
+        $users = User::selectRaw('COUNT(*) as count, DATE_FORMAT(created_at, "%Y-%m") as month')
+                      ->groupBy('month')
+                      ->orderBy('month')
+                      ->get()
+                      ->pluck('count', 'month')
+                      ->toArray();
+
+        $months = collect();
+        foreach (range(1, 12) as $month) {
+            $months->put(Carbon::create()->month($month)->format('Y-m'), 0);
+        }
+
+        $userGrowth = $months->merge($users);
+
+        return view('users.analytics', compact('userGrowth'));
     }
 }
