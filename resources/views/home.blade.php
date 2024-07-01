@@ -1,44 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 bg-light sidebar py-5">
-                <div class="d-flex flex-column">
-                    <a href="#" class="nav-link">Dashboard</a>
-                    <a href="#" class="nav-link">Users</a>
-                    <a href="#" class="nav-link">Reports</a>
-                    <a href="#" class="nav-link">Analytics</a>
-                    <a href="#" class="nav-link">Settings</a>
+            <div class="col-md-2 sidebar">
+                <div class="d-flex flex-column align-items-start">
+                    <a href="{{ route('home') }}" class="nav-link my-2 py-2 active"><i class="fas fa-tachometer-alt"></i>
+                        Dashboard</a>
+                    <a href="{{ route('user.index') }}"  class="nav-link my-2 py-2"><i class="fas fa-users"></i> Users</a>
+                    <a href="#" class="nav-link my-2 py-2"><i class="fas fa-chart-line"></i> Analytics</a>
                 </div>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button class="btn btn-primary my-2 py-2" style="padding: 0 60px;"><i class="fas fa-sign-out-alt"></i>
+                        Logout</button>
+                </form>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 bg-white">
                 <div class="container mt-4">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card text-white bg-primary mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Total Users</h5>
-                                    <p class="card-text">1,234</p>
+                                    <p class="card-text">{{ count($users) }}</p>
                                 </div>
                             </div>
                         </div>
@@ -69,25 +54,27 @@
                     </div>
                 </div>
                 <div class="container mt-4">
-                    <h2>Recent Orders</h2>
+                    <h2>Website Users</h2>
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Product</th>
-                                <th>Customer</th>
-                                <th>Status</th>
-                                <th>Amount</th>
+                                <th>Name</th>
+                                <th>Zone</th>
+                                <th>Email</th>
+                                <th>State</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Product A</td>
-                                <td>John Doe</td>
-                                <td>Shipped</td>
-                                <td>$123.45</td>
-                            </tr>
+                            @foreach ($users as $user)
+                                <tr>
+                                    <td>{{ $user->id }}</td>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->zone }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->state }}</td>
+                                </tr>
+                            @endforeach
                             <!-- Add more rows as needed -->
                         </tbody>
                     </table>
