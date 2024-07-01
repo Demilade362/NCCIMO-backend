@@ -36,8 +36,12 @@ class UserController extends Controller
             'state' => 'required|string',
             'stateCode' => 'required',
             'zone' => 'required',
-            'subzone' => 'required'
+            'subzone' => 'required',
+            'password' => 'required|confirmed',
+            'password_confirmation' => 'required'
         ]);
+
+        User::create($request->all());
 
         return redirect()->route('user.index')->with('msg', 'User Successfully Created');
     }
@@ -79,5 +83,12 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         //
+    }
+
+    public function search(Request $request) {
+        $name = $request->name;
+        $users = User::where('name', 'like', "%$name%")->get();
+    
+        return view('users.index', compact('users'));
     }
 }

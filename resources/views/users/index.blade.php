@@ -21,8 +21,9 @@
                 <div class="container mt-4">
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <a href="{{ route('user.create') }}" class="btn btn-success">Add User</a>
-                        <form action="" method="get" class="d-flex gap-2">
-                            <input type="text" name="search" class="form-control" placeholder="Find User by Name"
+                        <form action="{{ route('user.search') }}" method="POST" class="d-flex gap-2">
+                            @csrf
+                            <input type="text" name="name" class="form-control" placeholder="Find User by Name"
                                 id="search">
                             <button type="submit" class="btn btn-primary">Search</button>
                         </form>
