@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\WelcomeEmail;
 use App\Mail\Welcome;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -50,7 +51,9 @@ class AuthController extends Controller
 
         $user = User::create($request->all());
 
-        Mail::to($user->email)->send(new Welcome($user));
+        WelcomeEmail::dispatch($user);
+
+        // Mail::to($user->email)->send(new Welcome($user));
 
         return response([
             'user' => $user,

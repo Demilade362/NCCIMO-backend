@@ -7,10 +7,6 @@ Stay connected, get involved, and feel free to reach out if you have any questio
 
 Blessings,
 
-<x-mail::button :url="'https://nccfimo.org.ng/'">
-Back To Site
-</x-mail::button>
-
 Thanks,<br>
 NCCF Imo State
 </x-mail::message>
