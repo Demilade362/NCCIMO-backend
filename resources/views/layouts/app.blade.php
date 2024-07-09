@@ -49,7 +49,7 @@
     }
 
     #logout-form {
-        margin-top: 23rem !important;
+        margin-top: 20rem !important;
     }
 </style>
 

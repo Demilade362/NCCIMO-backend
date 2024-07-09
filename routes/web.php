@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Auth;
@@ -19,4 +20,5 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/user', UserController::class)->middleware(AdminMiddleware::class);
     Route::post('search', [UserController::class, 'search'])->name('user.search')->middleware(AdminMiddleware::class);
     Route::get('/analytics', [UserController::class, 'showAnalytics'])->name('user.analytics')->middleware(AdminMiddleware::class);
+    Route::resource('announcement', AnnouncementController::class);
 });
