@@ -12,7 +12,8 @@ class AnnouncementController extends Controller
      */
     public function index()
     {
-        return view('announcements.index');
+        $announcements =  Announcement::paginate(3);
+        return view('announcements.index', compact('announcements'));
     }
 
     /**
@@ -20,7 +21,7 @@ class AnnouncementController extends Controller
      */
     public function create()
     {
-        //
+        return view('announcements.create');
     }
 
     /**

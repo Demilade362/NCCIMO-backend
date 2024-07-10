@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    @use('Carbon\Carbon', 'Carbon')
+    @use('Illuminate\Support\Str', 'Str')
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 sidebar">
@@ -8,47 +10,29 @@
             </div>
             <div class="col-md-10 bg-white">
                 <div class="container mt-4">
-                    <h4>Post Announcement</h4>
-                    <div class="card">
-                        <div class="card-body text-start bg-white">
-                            <form action="{{ route('announcement.store') }}" method="post" enctype="multipart/form-data">
-                                @csrf
-                                <label for="title" class="form-label">Title</label>
-                                <input type="text" name="title" id="title"
-                                    class="form-control mb-3 @error('title')
-                                is-invalid
-                                @enderror"
-                                    value="{{ old('title') }}">
-                                @error('title')
-                                    <span class="invalid-feedback mb-2" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                <label for="image" class="form-label">Upload Banner</label>
-                                <input type="file" name="image" id="image"
-                                    class="form-control mb-3 
-                                    @error('image')
-                                        is-invalid
-                                    @enderror
-                                ">
-                                @error('image')
-                                    <span class="invalid-feedback mb-2" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                <label for="description" class="form-label">Description</label>
-                                <textarea name="description" id="description" cols="30" rows="10"
-                                    class="form-control mb-3 @error('description')
-                                    is-invalid
-                                @enderror">{{ old('description') }}</textarea>
-                                @error('description')
-                                    <span class="invalid-feedback mb-2" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                <button class="btn btn-primary" type="submit">Post Announcement</button>
-                            </form>
-                        </div>
+                    <h3 class="h3 mb-4">Announcements</h3>
+                    <div class="row">
+                        @foreach ($announcements as $announcement)
+                            <div class="col-lg-5">
+                                <div class="card text-start">
+                                    <div class="card-img-top">
+                                        <img src="/storage/{{ $announcement->image }}" alt="image" class="img-fluid">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title h4">
+                                            {{ $announcement->title }}
+                                        </div>
+                                        {{ Str::words($announcement->description, 20, '...') }}
+
+                                        <form action="{{ route('announcement.destroy', $announcement->id) }}" method="post">
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger my-3">Delete Announcement</button>
+                                        </form>
+                                        <p class="text-dark fw-lighter float-end">Posted {{ $announcement->created_at->diffForHumans() }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

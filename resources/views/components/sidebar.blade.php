@@ -6,7 +6,9 @@
             Users</a>
         <a href="{{ route('user.analytics') }}" class="nav-link my-2 py-2"><i class="fas fa-chart-line"></i> Analytics</a>
         <a href="{{ route('announcement.index') }}" class="nav-link my-2 py-2"><i class="fas fa-bullhorn"></i>
-            Announcement</a>
+            View Announcement</a>
+        <a href="{{ route('announcement.create') }}" class="nav-link my-2 py-2"><i class="fas fa-plus"></i>
+            Post Announcement</a>
     </div>
     <form id="logout-form" action="{{ route('logout') }}" method="POST">
         @csrf
