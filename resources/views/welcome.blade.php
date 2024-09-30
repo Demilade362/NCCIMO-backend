@@ -282,7 +282,104 @@
 
         </div>
     </div>
+    <div class="container-fluid mb-5" id="table">
+        <h2 class="text-light text-center display-4">Our Weekly Programs</h2>
+        <div class="container">
+            <table class="table table-borderless table-dark table-hover mt-4">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Service</th>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>State Sunday Service</td>
+                        <td>Sunday</td>
+                        <td>5:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Disciplineship Class</td>
+                        <td>Monday</td>
+                        <td>5:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Prayer Meeting</td>
+                        <td>Tuesday</td>
+                        <td>8:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Prayer Chain</td>
+                        <td>Thursday</td>
+                        <td>8:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Bible Study</td>
+                        <td>Friday</td>
+                        <td>8:00pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center">
+            <h3 class="display-5 text-decoration-underline mb-5">NCCF Core Mandate</h3>
+            <h1 class="mb-4">RURAL RUGGED EVANGELISM</h1>
+            <p class="lead">
+                The core mandate of the Nigeria Christian Corper's Fellowship(NCCF) is known as Rural Rigged Evangelism.
+                This mission is the responsibilty of every Jesus Corper withing the NCCF community.
+            </p>
+        </div>
+        <div class="row mb-5" style="margin-top: 7rem">
+            <div class="col-lg-4 text-center">
+                <div class="mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5" />
+                        <path
+                            d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z" />
+                    </svg>
+                </div>
+                <h4>Rural Rugged</h4>
+                <p>This term encapsulate the specific mission of evangelizing in rural and remote areas of Nigeria.
+                    These regions often lack access to mainstream religious services and are considered unreached in
+                    terms of Christian outreach.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                    </svg>
+                </div>
+                <h4>Responsibility</h4>
+                <p>Within the NCCF community, every memeber, referred to as a Jesus Corper is entrusted with the
+                    responsibility of participating in Rural Rugged Evangelism. This underscores the collective effort
+                    required to fulfill the mission</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                      </svg>
+                </div>
+                <h4>Mission Objective</h4>
+                <p>The primary objective of Rural Rugged Evangelism is to bring the message of God's glory and salvation
+                    to souls in remote and undeserved areas. This aligns with the broader mission of NCCF to spread the
+                    Chirstian faith and impact society.</p>
+            </div>
+        </div>
+    </div>
 </body>
-</div>
 
 </html>

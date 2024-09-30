@@ -18,8 +18,21 @@
     background-blend-mode: darken;
 }
 
-#intro{
+#intro {
     height: 20rem;
     margin-top: -12rem;
 }
 
+
+#table {
+    background-image: url('/public/executives/10.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    // height: 40rem;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    margin-top: 10rem
+}
