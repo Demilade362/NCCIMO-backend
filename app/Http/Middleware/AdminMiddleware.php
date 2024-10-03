@@ -19,8 +19,7 @@ class AdminMiddleware
 
         if(auth()->check()){
             if (auth()->user()->role == 0) {
-                auth()->logout();
-                return redirect()->route('login');
+                return redirect()->route('dashboard');
             }
         }
 
