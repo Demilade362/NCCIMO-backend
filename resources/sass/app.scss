@@ -25,7 +25,7 @@
 
 
 #table {
-    background-image: url('/public/executives/10.jpg');
+    background-image: url('/public/executives/9.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -34,5 +34,29 @@
     padding-bottom: 8rem;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
-    margin-top: 10rem
+    margin-top: 10rem;
+}
+
+#donations {
+    background-image: url('/public/executives/10.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    margin-top: 10rem;
+}
+
+.btn-purple{
+    background: #800080 !important;
+    color: #fff;
+}
+
+#quick p{
+    margin-bottom: 6px;
+}
+
+
+#contactus p{
+    margin-bottom: 6px;
 }

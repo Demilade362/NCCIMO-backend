@@ -38,7 +38,7 @@
                             <a class="nav-link active" href="#">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Make Donations</a>
+                            <a class="nav-link active" href="#donations">Make Donations</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -369,9 +369,11 @@
             </div>
             <div class="col-lg-4 text-center">
                 <div class="mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                    </svg>
                 </div>
                 <h4>Mission Objective</h4>
                 <p>The primary objective of Rural Rugged Evangelism is to bring the message of God's glory and salvation
@@ -380,6 +382,114 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid p-4 my-5" id="donations">
+        <div class="container my-5">
+            <div class="text-center text-light p-5">
+                <h5 class="display-5">
+                    Donations and Support
+                </h5>
+                <p class="lead">
+                    Feel free to use the provided bank details for your support contributions to NCCF Imo State. Thank
+                    you for your generosity and support in advancing our mission and projects.
+                </p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <h2 class="fw-bold">For Regular Support (Tithe, Offering, Donations, Vows, etc.)</h2>
+                            </div>
+                            <p class="lead">
+                            <h6>Bank Name: UBA</h6>
+                            <h6> Account Number: 2002407140</h6>
+                            <h6> Account Name: NCCF Imo State</h6>
+                            </p>
+                            <div class="mt-4 text-center">
+                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <h2 class="fw-bold">For Project Support (Building, Bus, and Others)</h2>
+                            </div>
+                            <p class="lead">
+                            <h6>Bank Name: Access Bank</h6>
+                            <h6>Account Number: 0021954159</h6>
+                            <h6>Account Name: NCCF Imo State Project</h6>
+                            </p>
+                            <div class="mt-4 text-center">
+                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <h5 class="fw-bold">For rural rugged, pledges, outreaches, capitation, and orientation,
+                                    camp mission
+                                    Capitation: This is a one month federal government allowance sown as seed of faith
+                                    to further the gospel</h5>
+                            </div>
+                            <p class="lead">
+                            <h6>Bank Name: First Bank</h6>
+                            <h6>Account Number: 3009411213</h6>
+                            <h6>Account Name: NCCF Imo State</h6>
+                            </p>
+                            <div class="mt-4 text-center">
+                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer p-3">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h4>NCCFIMO</h4>
+                    <p class="text-muted">The fellowship operates independently, not being affiliated with <br> or
+                        financially supported by any
+                        individual</p>
+                </div>
+                <div class="col-lg-3" id="quick">
+                    <h6 class="fw-bold text-uppercase">Quick Links</h6>
+                    <p><a href="#" class="nav-link">About</a></p>
+                    <p><a href="#" class="nav-link">Profile</a></p>
+                    <p><a href="#" class="nav-link">Sign Up</a></p>
+                </div>
+                <div class="col-lg-3" id="contactus">
+                    <h6 class="fw-bold text-uppercase">Contact Us</h6>
+                    <p><a href="#" class="nav-link"><span></span>J: 08151676347</a></p>
+                    <p><a href="#" class="nav-link"><span></span>B: 08037106044</a></p>
+                    <p><a href="#" class="nav-link"><span></span>Area V Estate, Behind Holy Rosary College,
+                            Port-Harcourt Road New Owerri, Owerri Imo State.</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="text-muted">
+                    Copyright &copy; <span id="year"></span> NCCFIMO
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const year = document.querySelector('#year');
+
+        const date = new Date();
+
+        year.innerHTML = date.getFullYear();
+    </script>
 </body>
 
 </html>
