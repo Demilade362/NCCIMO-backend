@@ -10,6 +10,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('dashboard');
 
+Route::get('/soon', function(){
+    return view('soon');
+})->name('soon');
+
 Auth::routes([
     'register' => true
 ]);

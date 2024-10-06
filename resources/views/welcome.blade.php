@@ -32,7 +32,7 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">About</a>
+                            <a class="nav-link active" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Contact us</a>
@@ -53,6 +53,20 @@
                         @endguest
 
                         @auth
+                            <li class="nav-item me-4">
+                                <a href="#" class="nav-link active position-relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-bell-fill me-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                                    </svg>
+                                    <span
+                                        class="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-danger">
+                                        99+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -157,7 +171,7 @@
         </div>
     </div>
     <div class="container mb-5" style="margin-top: 10rem;">
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-between align-items-center" id="about">
             <div class="col-lg-7">
                 <h2 class="fw-bold">ABOUT NCCF IMO
                 </h2>
@@ -429,7 +443,7 @@
                             <h6> Account Name: NCCF Imo State</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
                             </div>
                         </div>
                     </div>
@@ -446,7 +460,7 @@
                             <h6>Account Name: NCCF Imo State Project</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
                             </div>
                         </div>
                     </div>
@@ -466,7 +480,7 @@
                             <h6>Account Name: NCCF Imo State</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="#" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
                             </div>
                         </div>
                     </div>
