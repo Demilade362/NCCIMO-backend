@@ -54,7 +54,9 @@
 
                         @auth
                             <li class="nav-item me-4">
-                                <a href="#" class="nav-link active position-relative">
+                                <a href="#" class="nav-link active position-relative" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                                    aria-controls="offcanvasWithBothOptions">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-bell-fill me-1" viewBox="0 0 16 16">
                                         <path
@@ -62,7 +64,9 @@
                                     </svg>
                                     <span
                                         class="position-absolute top-2 start-100 translate-middle badge rounded-pill bg-danger">
-                                        99+
+                                        @php
+                                           echo count($announcements)
+                                        @endphp
                                         <span class="visually-hidden">unread messages</span>
                                     </span>
                                 </a>
@@ -74,6 +78,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
@@ -322,8 +327,8 @@
     <div class="container-fluid mb-5" id="table">
         <h2 class="text-light text-center display-4">Our Weekly Programs</h2>
         <div class="container">
-            <table class="table table-borderless table-dark table-hover mt-4">
-                <thead class="table-light">
+            <table class="table table-borderless table-light table-hover mt-4">
+                <thead class="table-dark">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Service</th>
@@ -443,7 +448,7 @@
                             <h6> Account Name: NCCF Imo State</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-dark rounded-pill px-5">Make Payment</a>
                             </div>
                         </div>
                     </div>
@@ -460,7 +465,7 @@
                             <h6>Account Name: NCCF Imo State Project</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-dark rounded-pill px-5">Make Payment</a>
                             </div>
                         </div>
                     </div>
@@ -480,12 +485,36 @@
                             <h6>Account Name: NCCF Imo State</h6>
                             </p>
                             <div class="mt-4 text-center">
-                                <a href="{{ route('soon') }}" class="btn btn-purple rounded-pill px-5">Transfer</a>
+                                <a href="{{ route('soon') }}" class="btn btn-dark rounded-pill px-5">Make Payment</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Announcements</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            @foreach ($announcements as $announcement)
+                <div class="card bg-white shadow-sm">
+                    <div class="card-img">
+                        <img src="./storage/{{ $announcement->image }}" alt="banner" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h5>{{ $announcement->title }}</h5>
+                        <p class="short">{{ $announcement->description }}</p>
+                        <div class="text-end">
+                            <a href="/" class="btn btn-dark btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 

@@ -23,6 +23,10 @@
     margin-top: -12rem;
 }
 
+.navbar{
+    z-index: 100 !important;
+}
+
 
 #table {
     background-image: url('/public/executives/9.jpg');
@@ -47,14 +51,14 @@
     margin-top: 10rem;
 }
 
-.btn-purple{
-    background: #800080 !important;
-    color: #fff;
-}
+// .btn-purple{
+//     background: #800080 !important;
+//     color: #fff;
+// }
 
-.btn-purple:hover{
-    color: #fff;
-}
+// .btn-purple:hover{
+//     color: #fff;
+// }
 
 btn:hover{
     color: #fff;
@@ -62,6 +66,12 @@ btn:hover{
 
 #quick p{
     margin-bottom: 6px;
+}
+
+.short{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 

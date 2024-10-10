@@ -3,11 +3,13 @@
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
+use App\Models\Announcement;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $announcements = Announcement::all();
+    return view('welcome', compact('announcements'));
 })->name('dashboard');
 
 Route::get('/soon', function(){
