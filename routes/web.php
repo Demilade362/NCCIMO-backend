@@ -4,17 +4,29 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Models\Announcement;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $announcements = Announcement::all();
+
     return view('welcome', compact('announcements'));
 })->name('dashboard');
 
-Route::get('/soon', function(){
-    return view('soon');
-})->name('soon');
+
+
+
+Route::middleware('auth')->group(function(){
+    Route::get('profile', function(){
+        $announcements = Announcement::all();
+        $user = User::find(auth()->id())->first();
+        return view('profile', compact('user', 'announcements'));
+    })->name('profile');
+    Route::get('/soon', function(){
+        return view('soon');
+    })->name('soon');
+});
 
 Auth::routes([
     'register' => true
