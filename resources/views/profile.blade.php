@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="col-lg-6 px-xl-10">
                                     <div class="d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
-                                        <h3 class="h2 mb-0">{{ $user->name }}</h3>
+                                        <h3 class="h2 mb-0 gradient-text">{{ $user->name }}</h3>
                                         <span class="text-primary">Member</span>
                                     </div>
                                     <ul class="list-unstyled mb-1-9">

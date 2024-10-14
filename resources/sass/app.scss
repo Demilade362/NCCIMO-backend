@@ -8,6 +8,7 @@
 @import 'bootstrap/scss/bootstrap';
 
 
+
 .background {
     background-image: url('/public/build.jpg');
     background-repeat: no-repeat;
@@ -18,12 +19,20 @@
     background-blend-mode: darken;
 }
 
+.gradient-text {
+    background: linear-gradient(to right, #6a11cb, #2575fc);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 #intro {
     height: 20rem;
     margin-top: -12rem;
 }
 
-.navbar{
+.navbar {
     z-index: 100 !important;
 }
 
@@ -60,21 +69,21 @@
 //     color: #fff;
 // }
 
-btn:hover{
+btn:hover {
     color: #fff;
 }
 
-#quick p{
+#quick p {
     margin-bottom: 6px;
 }
 
-.short{
+.short {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
 
-#contactus p{
+#contactus p {
     margin-bottom: 6px;
 }

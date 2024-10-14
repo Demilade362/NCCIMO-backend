@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Events\WelcomeEmail;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -68,7 +69,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'number' => $data['number'],
@@ -78,5 +80,8 @@ class RegisterController extends Controller
             'stateCode' => $data['stateCode'],
             'password' => Hash::make($data['password']),
         ]);
+        WelcomeEmail::dispatch($user);
+
+        return $user;
     }
 }

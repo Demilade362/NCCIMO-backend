@@ -101,7 +101,7 @@
     <div class="container mb-5" style="margin-top: 10rem;">
         <div class="row justify-content-between align-items-center" id="about">
             <div class="col-lg-7">
-                <h2 class="fw-bold">ABOUT NCCF IMO
+                <h2 class="fw-bold gradient-text">ABOUT NCCF IMO
                 </h2>
                 <p class="text-muted">
                     NCCF IMO is a chapter of the Nigeria Christian Corpers' Fellowship(NCCF). The fellowship is made up
