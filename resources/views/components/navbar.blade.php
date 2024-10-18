@@ -57,7 +57,7 @@
                             {{ Auth::user()->name }}
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-end bg-white" aria-labelledby="navbarDropdown">
                             <a href="{{ route('profile') }}" class="dropdown-item">Profile</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -84,14 +84,35 @@
     <div class="offcanvas-body">
         @foreach ($announcements as $announcement)
             <div class="card bg-white shadow-sm">
-                <div class="card-img">
-                    {{-- <img src="./storage/{{ $announcement->image }}" alt="banner" class="img-fluid"> --}}
-                </div>
                 <div class="card-body">
                     <h5>{{ $announcement->title }}</h5>
                     <p class="short">{{ $announcement->description }}</p>
                     <div class="text-end">
-                        <a href="/" class="">Read More</a>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#announcementModal{{ $announcement->id }}">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="announcementModal{{ $announcement->id }}" data-bs-backdrop="false"
+                data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="announcementModalLabel{{ $announcement->id }}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="announcementModalLabel{{ $announcement->id }}">
+                                {{ $announcement->title }}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/storage/{{ $announcement->image }}" alt="image" class="img-fluid">
+                            <p class="mt-4">{{ $announcement->description }}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>

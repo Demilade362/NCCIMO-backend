@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::middleware('auth')->group(function(){
     Route::get('profile', function(){
         $announcements = Announcement::all();
-        $user = User::find(auth()->id())->first();
+        $user = User::findOrFail(auth()->id());
         return view('profile', compact('user', 'announcements'));
     })->name('profile');
     Route::get('/soon', function(){

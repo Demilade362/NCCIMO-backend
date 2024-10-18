@@ -20,7 +20,8 @@
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #6a11cb, #2575fc);;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -82,6 +83,15 @@ btn:hover {
     overflow: hidden;
     white-space: nowrap;
 }
+
+.navbar {
+    z-index: 1;
+}
+
+.modal {
+    z-index: 1055;
+}
+
 
 
 #contactus p {
