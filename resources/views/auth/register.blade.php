@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <div class="card w-full shadow-none bg-white">
+                    <div class="card w-full shadow-none bg-white" data-aos="flip-up">
                         <div class="card-body text-start">
                             <form action="{{ route('register') }}" method="post">
                                 @csrf
@@ -46,8 +46,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="stateCode" class="form-label">State Code</label>
-                                        <input type="text" name="stateCode" id="stateCode"
-                                            value="{{ old('stateCode') }}"
+                                        <input type="text" name="stateCode" id="stateCode" value="{{ old('stateCode') }}"
                                             class="form-control mb-3 @error('stateCode') is-invalid @enderror">
                                         @error('stateCode')
                                             <span class="invalid-feedback mb-2" role="alert">

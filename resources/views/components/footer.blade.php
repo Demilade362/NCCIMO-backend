@@ -44,10 +44,17 @@
         </div>
     </div>
 </footer>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     const year = document.querySelector('#year');
 
     const date = new Date();
 
     year.innerHTML = date.getFullYear();
+    
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true // Whether animation should happen only once
+    });
 </script>

@@ -11,15 +11,18 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
 <body>
     <div class="background">
-       <x-navbar :announcements=$announcements />
+        <x-navbar :announcements=$announcements />
 
         <div class="container text-light" style="margin-top: 13rem;">
-            <div>
+            <div data-aos="fade-up">
                 <h1 class="display-3 text-light text-uppercase">
                     Welcome to <br> NCCF IMO STATE
                 </h1>
@@ -30,7 +33,7 @@
     <div class="container mt-4" id="cards">
         <div class="row">
             <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card mb-4" id="intro">
+                <div class="card mb-4" id="intro" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-img-top text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
                             class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -50,7 +53,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card" id="intro">
+                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-img-top text-center">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
@@ -75,7 +78,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card" id="intro">
+                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-img-top text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
                             class="bi bi-person-arms-up" viewBox="0 0 16 16">
@@ -98,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="container mb-5" style="margin-top: 10rem;">
+    <div class="container mb-5" style="margin-top: 10rem;" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-between align-items-center" id="about">
             <div class="col-lg-7">
                 <h2 class="fw-bold gradient-text">ABOUT NCCF IMO
@@ -128,8 +131,8 @@
             </div>
         </div>
     </div>
-    <div class="container mb-5 d-flex justify-content-around text-center align-items-center"
-        style="margin-top: 10rem">
+    <div class="container mb-5 d-flex justify-content-around text-center align-items-center" style="margin-top: 10rem"
+        data-aos="fade-up" data-aos-delay="100">
         <div>
             <h5 style="text-transform: uppercase">Zones</h5>
             <p class="display-1 mt-3">10</p>
@@ -139,7 +142,7 @@
             <p class="display-1 mt-3">33</p>
         </div>
     </div>
-    <div class="container mb-5 " style="margin-top: 10rem">
+    <div class="container mb-5 " style="margin-top: 10rem" data-aos="fade-up" data-aos-delay="100">
         <h2 class="fw-bold text-center">
             Meet Our Executives
         </h2>
@@ -250,7 +253,7 @@
             <a href="/gallery" class="fw-bold h5">Visit Gallery</a>
         </div>
     </div>
-    <div class="container-fluid mb-5" id="table">
+    <div class="container-fluid mb-5" id="table" data-aos="fade-up" data-aos-delay="100">
         <h2 class="text-light text-center display-4">Our Weekly Programs</h2>
         <div class="container">
             <table class="table table-borderless table-light table-hover mt-4">
@@ -297,7 +300,7 @@
             </table>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <div class="text-center">
             <h3 class="display-5 text-decoration-underline mb-5">NCCF Core Mandate</h3>
             <h1 class="mb-4">RURAL RUGGED EVANGELISM</h1>
@@ -350,7 +353,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid p-4 my-5" id="donations">
+    <div class="container-fluid p-4 my-5" id="donations" data-aos="fade-up" data-aos-delay="100">
         <div class="container my-5">
             <div class="text-center text-light p-5">
                 <h5 class="display-5">
