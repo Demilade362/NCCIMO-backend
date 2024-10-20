@@ -16,7 +16,7 @@
                     <a class="nav-link active" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Contact us</a>
+                    <a class="nav-link active" href="{{ route('contact') }}">Contact us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#donations">Make Donations</a>

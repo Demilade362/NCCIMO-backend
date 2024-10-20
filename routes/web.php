@@ -14,16 +14,25 @@ Route::get('/', function () {
     return view('welcome', compact('announcements'));
 })->name('dashboard');
 
+Route::get("/gallery", function () {
+    return view('gallery');
+})->name('gallery');
+
+
+Route::get("/contact", function () {
+    $announcements = Announcement::all();
+    return view('contact', compact('announcements'));
+})->name('contact');
 
 
 
-Route::middleware('auth')->group(function(){
-    Route::get('profile', function(){
+Route::middleware('auth')->group(function () {
+    Route::get('profile', function () {
         $announcements = Announcement::all();
         $user = User::findOrFail(auth()->id());
         return view('profile', compact('user', 'announcements'));
     })->name('profile');
-    Route::get('/soon', function(){
+    Route::get('/soon', function () {
         return view('soon');
     })->name('soon');
 });

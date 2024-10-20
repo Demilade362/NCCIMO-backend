@@ -19,6 +19,11 @@
     background-blend-mode: darken;
 }
 
+.container-max{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .gradient-text {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     ;

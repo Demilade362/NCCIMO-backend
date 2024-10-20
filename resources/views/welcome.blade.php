@@ -246,6 +246,9 @@
             </div>
 
         </div>
+        <div class="text-center mt-5">
+            <a href="/gallery" class="fw-bold h5">Visit Gallery</a>
+        </div>
     </div>
     <div class="container-fluid mb-5" id="table">
         <h2 class="text-light text-center display-4">Our Weekly Programs</h2>
