@@ -24,6 +24,10 @@ Route::get("/contact", function () {
     return view('contact', compact('announcements'));
 })->name('contact');
 
+Route::post("/contact", function(){
+    return redirect('contact', 200)->with('msg', 'Your message his been delivered to our Admins');
+})->name('post-contact');
+
 
 
 Route::middleware('auth')->group(function () {

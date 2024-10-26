@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-lg-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-lg-top" data-aos="zoom-in">
     <div class="container">
         <a class="d-flex align-items-center justify-content-between text-decoration-none" href="/">
             <img src="icon.png" class="img-fluid" width="30" height="30" alt="">
@@ -13,13 +13,13 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#about">About</a>
+                    <a class="nav-link active" href="/#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('contact') }}">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#donations">Make Donations</a>
+                    <a class="nav-link active" href="/#donations">Make Donations</a>
                 </li>
             </ul>
             <ul class="navbar-nav">

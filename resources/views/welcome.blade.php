@@ -160,7 +160,39 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/executives/3.jpg" class="d-block w-100 rounded-5" height="450px"
+                            <img src="/new-exec/4.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Adesiyan Mary Ikeoluwa</h5>
+                                <p>Drama Director</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/5.jpg" class="d-block w-100 rounded-5" height="450px" width="500px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ogbleba, Oseini Harry</h5>
+                                <p>Bible Study Secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/6.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>John, Bright Uwana</h5>
+                                <p>Sisters' Coordinator and Welfare Secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/7.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Damilola Esther Agbelusi</h5>
+                                <p>Assistant General Secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/8.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
@@ -168,19 +200,19 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/executives/8.jpg" class="d-block w-100 rounded-5" height="450px"
-                                width="500px" alt="...">
+                            <img src="/new-exec/13.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Alatise Sharon Eniola</h5>
+                                <p>Financial Secretary</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/executives/2.jpg" class="d-block w-100 rounded-5" height="450px"
+                            <img src="/new-exec/14.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Victor Ogochukwu OJOLUM</h5>
+                                <p>Transport & Organizing Secretary</p>
                             </div>
                         </div>
                     </div>
@@ -211,27 +243,59 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/executives/4.jpg" class="d-block w-100 rounded-5" height="450px"
+                            <img src="/new-exec/1.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Adegoke Leah Feranmi</h5>
+                                <p>Treasurer</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/executives/7.jpg" class="d-block w-100 rounded-5" height="450px"
+                            <img src="/new-exec/2.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Omatise Victor</h5>
+                                <p>Publicity Secretary</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/executives/13.jpg" class="d-block w-100 rounded-5" height="450px"
-                                width="500px" alt="...">
+                            <img src="/new-exec/3.jpg" class="d-block w-100 rounded-5" height="450px" width="500px"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Lawal Olalekan Samuel</h5>
+                                <p>Evangelism Secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/9.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cynthia Gift Stanley</h5>
+                                <p>Music Director</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/10.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Oghenekaro Silas Obowaye</h5>
+                                <p>General Secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/11.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Oluyinka Segun James</h5>
+                                <p>Prayer secretary</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/new-exec/12.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Theophilus A. Ogunfowoke</h5>
+                                <p>Assistant Transport & Organizing Secretary</p>
                             </div>
                         </div>
                     </div>

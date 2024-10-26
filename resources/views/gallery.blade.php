@@ -25,7 +25,179 @@
             <a href="/" class="h5">Back to Home</a>
         </div>
         <div>
-            <h4 class="text-center mb-4">
+            <h4 class="text-center my-5">New Executives</h4>
+            <div class="row g-3">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/1.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/1.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/2.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/2.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/3.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/3.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/4.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/4.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/5.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/5.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img src="/new-exec/6.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal8">
+                    </div>
+                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-4">
+                                        <img src="/new-exec/6.jpg" width="200" height="200" class="img-fluid"
+                                            alt="Image 1">
+                                    </div>
+                                    <div class="col-8">
+                                        <h6>AKOGWU ODUMU Isaiah</h6>
+                                        <p class="text-muted">Ex-President/Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h4 class="text-center my-5">
                 Past Executives
             </h4>
             <div class="row g-3">
