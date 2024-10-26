@@ -149,7 +149,7 @@
         <div class="row mt-5 justify-content-around align-items-center">
             <div class="col-lg-4">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
-                    style="max-height: 30rem">
+                    style="max-height: 35rem">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -195,8 +195,8 @@
                             <img src="/new-exec/8.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Gutip Meshack Emmanuel</h5>
+                                <p>President</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -229,7 +229,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div id="carouselExampleAutoplaying2" class="carousel slide" style="max-height: 30rem"
+                <div id="carouselExampleAutoplaying2" class="carousel slide" style="max-height: 35rem"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide-to="0"

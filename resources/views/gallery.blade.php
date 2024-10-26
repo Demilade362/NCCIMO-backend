@@ -3,389 +3,181 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - NCCIMFO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card img {
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover img {
-            transform: scale(1.05);
-        }
-    </style>
-
+    <title>Gallery - NCCFIMO</title>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 
-<body>
-    <div class="container py-5">
-        <div class="d-flex justify-content-between">
-            <h5 class="text-center mb-5 text-decoration-underline">Executives Gallery</h5>
-            <a href="/" class="h5">Back to Home</a>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light justify-content-between">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/" class="nav-link">Hompage</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+            <h4 class="nav-item">Gallery</h4>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/gallery" class="nav-link">Current Executives</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Old Executives</a></li>
+            </ul>
         </div>
-        <div>
-            <h4 class="text-center my-5">New Executives</h4>
-            <div class="row g-3">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/1.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
-                    </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/1.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+    </nav>
+    <main>
+        <section class="projects mt-lg-5 mt-sm-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="/new-exec/1.jpg" alt="Project 1">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Adegoke Leah Feranmi</h3>
+                                <p class="project-description">Office: Treasurer
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/2.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
-                    </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/2.jpg" alt="Project 2">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Omatise Victor</h3>
+                                <p class="project-description">Office : Publicity Secretary</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/3.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
-                    </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/3.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/3.jpg" alt="Project 3">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Lawal Olalekan Samuel</h3>
+                                <p class="project-description">Office: Evangelism Secretary
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/4.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
-                    </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/4.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/4.jpg" alt="Project 4">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: ADESIYAN MARY IKEOLUWA</h3>
+                                <p class="project-description">Office: DRAMA DIRECTOR</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/5.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
-                    </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/5.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/5.jpg" alt="Project 5">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Ogbleba, Oseini Harry</h3>
+                                <p class="project-description">Office: Bible Study Secretary</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/new-exec/6.jpg" class="card-img-top img-fluid" alt="Image 6" data-bs-toggle="modal"
-                            data-bs-target="#imageModal8">
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/6.jpg" alt="Project 6">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: John, Bright Uwana</h3>
+                                <p class="project-description">Office : Sisters' Coordinator and Welfare Secretary</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal fade" id="imageModal8" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/new-exec/6.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/7.jpg" alt="Project 7">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Damilola Esther Agbelusi </h3>
+                                <p class="project-description">Office: Assistant General Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/8.jpg" alt="Project 8">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Gutip Meshack Emmanuel</h3>
+                                <p class="project-description">Office: President
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/9.jpg" alt="Project 9">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Cynthia Gift Stanley </h3>
+                                <p class="project-description">Office: Music Director
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/10.jpg" alt="Project 10">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Oghenekaro Silas Obowaye</h3>
+                                <p class="project-description">Office: General Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/11.jpg" alt="Project 11">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Oluyinka Segun James </h3>
+                                <p class="project-description">Office: Prayer secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/12.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Theophilus A. Ogunfowoke</h3>
+                                <p class="project-description">Office:  Assistant Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/13.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Alatise Sharon Eniola</h3>
+                                <p class="project-description">Office:  Financial Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./new-exec/14.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office:  Transport & Organizing Secretary
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <h4 class="text-center my-5">
-                Past Executives
-            </h4>
-            <div class="row g-3">
-                <!-- Gallery Item 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/2.jpg" class="card-img-top img-fluid" alt="Image 1"
-                            data-bs-toggle="modal" data-bs-target="#imageModal2">
-                    </div>
-                    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>Matanmi Samuel</h6>
-                                        <p class="text-muted">Ex-General Secretary</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gallery Item 2 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/4.jpg" class="card-img-top img-fluid" alt="Image 2"
-                            data-bs-toggle="modal" data-bs-target="#imageModal3">
-                    </div>
-                    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 2</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gallery Item 3 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/3.jpg" class="card-img-top img-fluid" alt="Image 3"
-                            data-bs-toggle="modal" data-bs-target="#imageModal4">
-                    </div>
-                    <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gallery Item 4 -->
-                <!-- Add more gallery items as needed -->
-            </div>
-            <div class="row g-3">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/7.jpg" class="card-img-top img-fluid" alt="Image 4"
-                            data-bs-toggle="modal" data-bs-target="#imageModal1">
-                    </div>
-                    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- Gallery Item 1 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/8.jpg" class="card-img-top img-fluid" alt="Image 1"
-                            data-bs-toggle="modal" data-bs-target="#imageModal6">
-                    </div>
-                    <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModalLabel6"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Gallery Item 4 -->
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img src="/executives/13.jpg" class="card-img-top img-fluid" alt="Image 4"
-                            data-bs-toggle="modal" data-bs-target="#imageModal7">
-                    </div>
-                    <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModalLabel7"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="imageModalLabel1">Image 1</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-4">
-                                        <img src="/executives/2.jpg" width="200" height="200" class="img-fluid"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="col-8">
-                                        <h6>AKOGWU ODUMU Isaiah</h6>
-                                        <p class="text-muted">Ex-President/Chairman</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more gallery items as needed -->
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        </section>
+    </main>
+    <script>
+        window.onload = function() {
+            var grid = document.querySelector('.projects .row');
+            var masonry = new Masonry(grid, {
+                itemSelector: '.col-lg-4',
+                columnWidth: '.col-lg-4',
+                percentPosition: true
+            });
+        };
+    </script>
 </body>
 
 </html>
