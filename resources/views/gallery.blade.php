@@ -13,20 +13,21 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-white navbar-light justify-content-between">
         <div class="container">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-none d-lg-flex">
                 <li class="nav-item"><a href="/" class="nav-link">Hompage</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
-            <h4 class="nav-item">Gallery</h4>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="/gallery" class="nav-link">Current Executives</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Old Executives</a></li>
+            <h4><a class="navbar-brand" href="/gallery">Gallery</a></h4>
+            <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item"><a href="/gallery#new" class="nav-link">Current Executives</a></li>
+                <li class="nav-item"><a href="/gallery#old" class="nav-link">Old Executives</a></li>
             </ul>
         </div>
     </nav>
     <main>
         <section class="projects mt-lg-5 mt-sm-1">
-            <div class="container">
+            <div class="container" id="new">
+                <h4>New Executives</h4>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="project wow fadeInUp">
@@ -139,7 +140,7 @@
                             <img src="./new-exec/12.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
                                 <h3 class="project-title">Name: Theophilus A. Ogunfowoke</h3>
-                                <p class="project-description">Office:  Assistant Transport & Organizing Secretary
+                                <p class="project-description">Office: Assistant Transport & Organizing Secretary
                                 </p>
                             </div>
                         </div>
@@ -149,7 +150,7 @@
                             <img src="./new-exec/13.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
                                 <h3 class="project-title">Name: Alatise Sharon Eniola</h3>
-                                <p class="project-description">Office:  Financial Secretary
+                                <p class="project-description">Office: Financial Secretary
                                 </p>
                             </div>
                         </div>
@@ -159,12 +160,89 @@
                             <img src="./new-exec/14.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
                                 <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office:  Transport & Organizing Secretary
+                                <p class="project-description">Office: Transport & Organizing Secretary
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr>
+            <div class="container mt-5" id="old">
+                <h4>Old Executives</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/2.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/3.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/4.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/7.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/8.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/13.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project wow fadeInUp">
+                            <img src="./executives/22.jpg" class="img-fluid" alt="Project 12">
+                            <div class="project-details">
+                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
+                                <p class="project-description">Office: Transport & Organizing Secretary
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>

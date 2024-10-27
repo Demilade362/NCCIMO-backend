@@ -30,10 +30,10 @@
             </div>
         </div>
     </div>
-    <div class="container mt-4" id="cards">
+    <div class="container mt-4">
         <div class="row">
-            <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card mb-4" id="intro" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-12 my-4">
+                <div class="card mb-4" id="intro" data-aos="fade-up" data-aos-delay="100" id="card">
                     <div class="card-img-top text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
                             class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -45,15 +45,15 @@
                         <h4 class="fw-bold">
                             FELLOWSHIP
                         </h4>
-                        <p class="lead mt-3">
+                        <p class="text-sm text-muted mt-3">
                             NCCF Imo State, unites individuals in faith, fostering spritual growth through prayer
                             meetings, and worship services, encouraging mutual support and shared Christian values.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-12 my-4">
+                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100" id="card">
                     <div class="card-img-top text-center">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
@@ -70,15 +70,15 @@
                         <h4 class="fw-bold">
                             ORGANIZATION
                         </h4>
-                        <p class="lead mt-3">
+                        <p class="text-sm text-muted mt-3">
                             As a legally registered entity with the government, NCCF operates with a structured
                             governance system, defined roles, and committees for effective management of its activities.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12 my-4">
-                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-12 my-4">
+                <div class="card" id="intro" data-aos="fade-up" data-aos-delay="100" id="card">
                     <div class="card-img-top text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="70" fill="currentColor"
                             class="bi bi-person-arms-up" viewBox="0 0 16 16">
@@ -91,7 +91,7 @@
                         <h4 class="fw-bold">
                             FAMILY
                         </h4>
-                        <p class="lead mt-3">
+                        <p class="text-sm text-muted mt-3">
                             NCCF provides a nurturing supportive environment where members care for each other
                             emotionally, spiritually, and creating a strong sense of community (Where members feel
                             valued and loved) and belonging
@@ -147,7 +147,7 @@
             Meet Our Executives
         </h2>
         <div class="row mt-5 justify-content-around align-items-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"
                     style="max-height: 35rem">
                     <div class="carousel-indicators">
@@ -160,6 +160,14 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                            <img src="/new-exec/8.jpg" class="d-block w-100 rounded-5" height="450px"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Gutip Meshack Emmanuel</h5>
+                                <p>President</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
                             <img src="/new-exec/4.jpg" class="d-block w-100 rounded-5" height="450px"
                                 alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -175,46 +183,7 @@
                                 <p>Bible Study Secretary</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/6.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>John, Bright Uwana</h5>
-                                <p>Sisters' Coordinator and Welfare Secretary</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/7.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Damilola Esther Agbelusi</h5>
-                                <p>Assistant General Secretary</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/8.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Gutip Meshack Emmanuel</h5>
-                                <p>President</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/13.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Alatise Sharon Eniola</h5>
-                                <p>Financial Secretary</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/14.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Victor Ogochukwu OJOLUM</h5>
-                                <p>Transport & Organizing Secretary</p>
-                            </div>
-                        </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="prev">
@@ -228,7 +197,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-none d-lg-grid">
                 <div id="carouselExampleAutoplaying2" class="carousel slide" style="max-height: 35rem"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -274,30 +243,6 @@
                                 <p>Music Director</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/10.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Oghenekaro Silas Obowaye</h5>
-                                <p>General Secretary</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/11.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Oluyinka Segun James</h5>
-                                <p>Prayer secretary</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/new-exec/12.jpg" class="d-block w-100 rounded-5" height="450px"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Theophilus A. Ogunfowoke</h5>
-                                <p>Assistant Transport & Organizing Secretary</p>
-                            </div>
-                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button"
                         data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
@@ -314,7 +259,8 @@
 
         </div>
         <div class="text-center mt-5">
-            <a href="/gallery" class="fw-bold h5">Visit Gallery</a>
+            <h6>You want to know more of our Executive?</h6>
+            <a href="/gallery" class="fw-bold h5">Visit the Gallery</a>
         </div>
     </div>
     <div class="container-fluid mb-5" id="table" data-aos="fade-up" data-aos-delay="100">

@@ -34,7 +34,7 @@
                 @endguest
 
                 @auth
-                    <li class="nav-item me-4">
+                    <li class="nav-item me-4 d-none d-lg-block">
                         <a href="#" class="nav-link active position-relative" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                             aria-controls="offcanvasWithBothOptions">
@@ -50,6 +50,11 @@
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                         </a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="nav-link active" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">Announcements</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

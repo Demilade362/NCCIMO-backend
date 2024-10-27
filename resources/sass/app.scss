@@ -7,6 +7,21 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+* {
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in element's width/height */
+}
+
+
+#card {
+    overflow: hidden;
+    padding: 15px;
+    /* Adjust the padding if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional for better appearance */
+    margin-bottom: 10rem;
+}
+
 
 
 .background {
@@ -38,6 +53,20 @@
     margin-top: -12rem;
 }
 
+
+@media screen and (max-width: 991px) {
+    #intro{
+        margin-top: 0px;
+    }
+
+    .carousel{
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+}
+
+
+
 .navbar {
     z-index: 100 !important;
 }
@@ -65,15 +94,6 @@
     background-blend-mode: darken;
     margin-top: 10rem;
 }
-
-// .btn-purple{
-//     background: #800080 !important;
-//     color: #fff;
-// }
-
-// .btn-purple:hover{
-//     color: #fff;
-// }
 
 btn:hover {
     color: #fff;
