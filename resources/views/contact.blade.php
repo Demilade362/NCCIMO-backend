@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-     <!-- AOS CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <x-navbar :announcements="$announcements" />
-    <div class="container-max">
+    <div class="container">
         <div class="my-5">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -60,7 +60,7 @@
                                 </div>
 
                                 <!-- Submit Button -->
-                                <div class="d-grid gap-2">
+                                <div class="d-grid">
                                     <button type="submit" class="btn btn-dark btn-block">Submit</button>
                                 </div>
 
@@ -71,12 +71,13 @@
             </div>
         </div>
     </div>
-    <div class="mt-5 container-fluid">
+    <div class="mt-5 container-fluid" id="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63547.20151552562!2d6.959340757591885!3d5.4623985904653525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425bdc10ffe187%3A0x4e292be17b2a2d34!2sHoly%20Rosary%20International%20College%20Owerri!5e0!3m2!1sen!2sng!4v1729464760028!5m2!1sen!2sng"
-            width="1330" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            class="responsive-iframe" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <x-footer />
 </body>
 

@@ -22,7 +22,7 @@
     <div style="margin: 7rem auto">
         <div class="container bg-white" style="
             max-width: 800px;
-                margin: 0 auto;
+                margin: auto;
              ">
             <div class="row">
                 <div class="col-lg-12 mb-4 mb-sm-5">
@@ -30,7 +30,7 @@
                         <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 mb-4 mb-lg-0">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="..." data-aos="slide-right">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="..." data-aos="slide-right" class="img-fluid">
                                 </div>
                                 <div class="col-lg-6 px-xl-10 text-end"  data-aos="slide-left">
                                     <div class="d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
