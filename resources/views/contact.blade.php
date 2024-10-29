@@ -23,8 +23,8 @@
                 <div class="col-md-8">
                     <div class="card bg-white" data-aos="zoom-in">
                         <div class="card-body">
-                            <form action="#" method="POST">
-
+                            <form action="{{ route('contact-post') }}" method="POST">
+                                @csrf
                                 <!-- Name field -->
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Full Name</label>
@@ -51,13 +51,6 @@
                                     <label for="message" class="form-label">Message</label>
                                     <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..."
                                         required></textarea>
-                                </div>
-
-                                <!-- Report a Problem checkbox -->
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="reportProblem"
-                                        name="reportProblem">
-                                    <label class="form-check-label" for="reportProblem">This is a problem report</label>
                                 </div>
 
                                 <!-- Submit Button -->

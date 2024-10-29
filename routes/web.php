@@ -3,10 +3,13 @@
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
+use App\Mail\MailAdmin;
 use App\Models\Announcement;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     $announcements = Announcement::all();
@@ -23,6 +26,27 @@ Route::get("/contact", function () {
     $announcements = Announcement::all();
     return view('contact', compact('announcements'));
 })->name('contact');
+
+Route::post('/contact-post', function(Request $request){
+
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        'subject' => 'required',
+        'message' => 'required'
+    ]);
+
+
+    $mail = [
+        "name" => $request->name,
+        'email' => $request->email,
+        'subject' => $request->subject,
+        'message' => $request->message,
+    ];
+
+    Mail::to('admin@nccfimo.org.ng')->send(new MailAdmin($mail));
+    return redirect()->route('contact')->with('msg', 'Message Successfully');
+})->name('contact-post');
 
 Route::post("/contact", function(){
     return redirect('contact', 200)->with('msg', 'Your message his been delivered to our Admins');
