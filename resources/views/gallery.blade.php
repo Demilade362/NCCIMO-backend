@@ -175,8 +175,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/2.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Matanmi Samuel</h3>
+                                <p class="project-description">Office: Ex-General Secretary
                                 </p>
                             </div>
                         </div>
@@ -185,8 +185,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/3.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: AKOGWU ODUMU Isaiah</h3>
+                                <p class="project-description">Office: Ex-President/Chairman
                                 </p>
                             </div>
                         </div>
@@ -195,8 +195,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/4.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Samson Joel Ifeoluwa</h3>
+                                <p class="project-description">Office: Ex-Music Director
                                 </p>
                             </div>
                         </div>
@@ -205,8 +205,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/7.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Taiwo Mary Mayowa</h3>
+                                <p class="project-description">Office: Ex-Sister's coordinator
                                 </p>
                             </div>
                         </div>
@@ -215,8 +215,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/8.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Adeniji Samuel Olatunde</h3>
+                                <p class="project-description">Office: Ex-Publicity Secretary
                                 </p>
                             </div>
                         </div>
@@ -225,8 +225,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/13.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Okunola John Segun</h3>
+                                <p class="project-description">Office: Ex-Evangelism Secretary
                                 </p>
                             </div>
                         </div>
@@ -235,8 +235,8 @@
                         <div class="project wow fadeInUp">
                             <img src="./executives/22.jpg" class="img-fluid" alt="Project 12">
                             <div class="project-details">
-                                <h3 class="project-title">Name: Victor Ogochukwu OJOLUM</h3>
-                                <p class="project-description">Office: Transport & Organizing Secretary
+                                <h3 class="project-title">Name: Olutayo Ayoola Ezekiel</h3>
+                                <p class="project-description">Office: Ex-Organizing Secretary
                                 </p>
                             </div>
                         </div>
