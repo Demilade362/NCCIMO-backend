@@ -8,6 +8,7 @@
     <title>Gallery - NCCFIMO</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <link rel="icon" sizes="32x32" href="icon.png">
 </head>
 
 <body class="bg-light">
